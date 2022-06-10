@@ -1,0 +1,6 @@
+Options +FollowSymLinks
+RewriteEngine On
+
+RewriteCond %{REQUEST_URI} !.(css|gif|ico|jpg|js|png|swf|txt|eot|svg|ttf|woff|woff2|otf|pdf|php|html|doc|docx)$
+
+RewriteRule ^(.*)$ index.php?page=$1 [QSA,E=X_REWRITE:1,L]

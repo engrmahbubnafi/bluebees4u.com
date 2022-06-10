@@ -1,0 +1,25 @@
+[
+{
+"id":1,
+"name":"System Admin",
+"description":"can access all part",
+"status":"active",
+"is_deletable":0,
+"is_editable":0,
+"created_by":null,
+"updated_by":null,
+"created_at":"2022-01-03 12:12:38",
+"updated_at":"2022-01-20 11:21:46"
+},
+{
+"id":2,
+"name":"Admin",
+"description":"can access operation part",
+"status":"active",
+"is_deletable":"0",
+"is_editable":"1",
+"created_by":null,
+"updated_by":null,
+"created_at":"2022-01-03 12:12:38",
+"updated_at":"2022-01-20 11:23:40"
+}]

@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'comic-sans-ms';
+    src: url('../webfonts/comic-sans-ms.eot');
+    src: url('../webfonts/comic-sans-ms.eot?#iefix') format('embedded-opentype'),
+        url('../webfonts/comic-sans-ms.woff2') format('woff2'),
+        url('../webfonts/comic-sans-ms.woff') format('woff'),
+        url('../webfonts/comic-sans-ms.ttf') format('truetype'),
+        url('../webfonts/comic-sans-ms.svg#comic-sans-ms') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

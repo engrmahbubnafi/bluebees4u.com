@@ -1,0 +1,31 @@
+.card {
+    height: 100px;
+}
+
+.card:hover {
+    transition: 0.5s;
+    transform: translateY(-5px);
+}
+
+.card-body {
+    padding-top: 25px;
+}
+
+.card-body-text {
+    font-size: 16px;
+}
+
+.dashboard-card-footer {
+    padding-top: 10px;
+}
+
+.card-footer-text {
+    padding-top: 5px;
+    font-size: 15px;
+}
+
+// CUSTOM CSS
+
+.bg-primary {
+    background: #00abe6 !important;
+}

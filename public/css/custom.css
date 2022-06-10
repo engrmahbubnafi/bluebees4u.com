@@ -1,0 +1,108 @@
+.section-subtitle {
+    display: inline-block;
+}
+.fa-x {
+    font-size: 20px;
+}
+.delete-form {
+    display: inline-block;
+    position: absolute;
+    margin-left: 1%;
+}
+.delete-form > .btn-xs {
+    font-size: 10px;
+    color: white;
+    background-color: #189279;
+}
+.delete-form > .btn-xs:hover,
+.delete-form > .btn-xs:focus {
+    background-color: #23d4af;
+}
+
+.addon-button {
+    cursor: pointer;
+    display: inline-block;
+    background-color: #00abe6;
+    border: none;
+    color: white;
+    margin-top: 10px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 50px;
+}
+
+.addon-details-div {
+    padding-top: 30px;
+}
+
+.addon-form {
+    margin: 0px 5px;
+    padding: 10px 0px;
+    background-color:#cdd0dd;
+}
+
+.addon-title {
+    padding-top: 25px;
+}
+
+.addon-price {
+    padding-top: 25px;
+}
+  
+.input-group-field {
+    padding: 8px 3px !important;
+    text-align: center;
+    width: 45px !important;
+    border: none;
+}
+
+.input-group-field::-webkit-inner-spin-button,
+.input-group-field ::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.quantity-selection {
+    padding-top: 8px !important;
+}
+
+.button {
+    cursor: pointer;
+    background-color: transparent !important;
+    padding: 0px 2px;
+    border: none;
+}
+
+.button i{
+    font-size: 10px;
+}
+
+.addon-payable-amount {
+    text-align: right;    
+}
+
+.addon-payable-amount p {
+    padding-top: 10px;
+    padding-right: 100px;
+}
+
+/* .skeleton {
+    animation: skeleton-loader 1s linear infinite alternate;
+}
+
+@keyframes skeleton-loader {
+    0% {
+        background-color: hsl(200, 20%, 80%);
+    }
+
+    100% {
+        background-color: hsl(200, 20%, 95%);
+    }
+}
+
+.skeleton-banner {
+    width: 1920px;
+    height: 500px;
+} */
