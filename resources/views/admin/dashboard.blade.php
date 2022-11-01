@@ -201,7 +201,7 @@
             <a href="{{ route('paid_honey_bee_subscribers.index') }}">
                 <div class="card bg-primary text-white mb-4">
                     <div class="text-center card-body card-body-text">
-                        Paid Honey Bee
+                        Paid Honey Bee Subcribers
                     </div>
                     <div class="card-footer dashboard-card-footer">
                         <p class="text-center text-white card-footer-text">
@@ -216,7 +216,7 @@
             <a href="{{ route('paid_bumble_bee_subscribers.index') }}">
                 <div class="card bg-primary text-white mb-4">
                     <div class="text-center card-body card-body-text">
-                        Paid Bumble Bee
+                        Paid Bumble Bee Subcribers
                     </div>
                     <div class="card-footer dashboard-card-footer">
                         <p class="text-center text-white card-footer-text">
@@ -231,7 +231,7 @@
             <a href="{{ route('paid_queen_bee_subscribers.index') }}">
                 <div class="card bg-primary text-white mb-4">
                     <div class="text-center card-body card-body-text">
-                        Paid Queen Bee
+                        Paid Queen Bee Subcribers
                     </div>
                     <div class="card-footer dashboard-card-footer">
                         <p class="text-center text-white card-footer-text">

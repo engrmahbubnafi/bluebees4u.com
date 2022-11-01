@@ -13,7 +13,7 @@ return collect([
     ]),
     (new EmptyObj)->setRawAttributes([
         'title' => 'Signup Users',
-        'icon' => '<i class="fa fa-home"></i>',
+        'icon' => '<i class="fa fa-user" aria-hidden="true"></i>',
         'route_name' => 'signupusers.index',
         'params' => [],
         'permission' => null,
@@ -21,7 +21,7 @@ return collect([
     ]),
     (new EmptyObj)->setRawAttributes([
         'title' => 'Subscribers',
-        'icon' => '<i class="fa fa-home"></i>',
+        'icon' => '<i class="fa fa-user" aria-hidden="true"></i>',
         'route_name' => 'subscribers.index',
         'params' => [],
         'permission' => null,
@@ -60,7 +60,14 @@ return collect([
                         'permission' => null,
                         'children' => collect([])
                     ]),
-                ])
+                    (new EmptyObj)->setRawAttributes([
+                        'title' => 'Subscription Ended',
+                        'route_name' => 'subscription-ended.index',
+                        'params' => [],
+                        'permission' => null,
+                        'children' => collect([])
+                    ]),
+                ]),
             ]),
             // (new EmptyObj)->setRawAttributes([
             //     'title' => 'All Expired Subscribers',
@@ -74,7 +81,7 @@ return collect([
 
     (new EmptyObj)->setRawAttributes([
         'title' => 'Payments',
-        'icon' => '<i class="fa fa-home"></i>',
+        'icon' => '<i class="fa fa-money" aria-hidden="true"></i>',
         'route_name' => null,
         'params' => [],
         'permission' => null,
@@ -98,7 +105,7 @@ return collect([
 
     (new EmptyObj)->setRawAttributes([
         'title' => 'Promotions',
-        'icon' => '<i class="fa fa-home"></i>',
+        'icon' => '<i class="fa fa-money" aria-hidden="true"></i>',
         'route_name' => null,
         'params' => [],
         'permission' => null,
@@ -122,7 +129,7 @@ return collect([
 
     (new EmptyObj)->setRawAttributes([
         'title' => 'Contacts',
-        'icon' => '<i class="fa fa-home"></i>',
+        'icon' => '<i class="fa fa-envelope" aria-hidden="true"></i>',
         'route_name' => 'contactStatus',
         'params' => [],
         'permission' => null,
@@ -131,7 +138,7 @@ return collect([
 
     (new EmptyObj)->setRawAttributes([
         'title' => 'Packages & Addons',
-        'icon' => '<i class="fa fa-home"></i>',
+        'icon' => '<i class="fa fa-check-square" aria-hidden="true"></i>',
         'route_name' => null,
         'params' => [],
         'permission' => null,
@@ -178,7 +185,7 @@ return collect([
                         'permission' => null,
                         'children' => collect([])
                     ]),
-                ])
+                ]),
             ]),
         ]),
     ]),

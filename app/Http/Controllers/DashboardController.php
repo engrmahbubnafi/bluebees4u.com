@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Classes\Dashboard;
 use App\Classes\NewPaidSubscribers;
 use App\Classes\CurrentPaidSubscribers;
+use App\Classes\SubscriptionEnded;
 use App\Classes\NewSignUpUsers;
 use App\Classes\NewSubscribers;
 use App\Classes\NewTrialSubscribers;
@@ -94,6 +95,15 @@ class DashboardController extends Controller
          */
         
         return (new CurrentPaidSubscribers)->index();
+    }
+
+    # To show all paid subscribers whose subscription is ended.
+    public function subscriptionEnded() {
+        /**
+         * @param \App\Classes\SubscriptionEnded
+         */
+        
+        return (new SubscriptionEnded)->index();
     }
 
     // To show all free trial subscribers.

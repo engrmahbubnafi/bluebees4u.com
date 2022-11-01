@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Addon;
 use App\Http\Requests\AddonStoreRequest;
-use App\Http\Requests\PaymentUpdateRequest;
+use App\Http\Requests\AddonUpdateRequest;
 
 class AddonController extends Controller
 {
@@ -72,15 +72,25 @@ class AddonController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\PaymentUpdateRequest  $request
+     * @param  \Illuminate\Http\AddonUpdateRequest  $request
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(PaymentUpdateRequest $request, $id)
+    public function update(AddonUpdateRequest $request, $id)
     {
         $updateAddon = Addon::find($id);
         $updateAddon->addon_title = $request->addon_title;
         $updateAddon->addon_price = $request->addon_price;
+
+        if(!$request->status)
+        {
+            $updateAddon->status = 0;
+        }
+        else 
+        {
+            $updateAddon->status = 1;
+        }
+
         $updateAddon->update();
 
         return redirect()->back()->with('flash_success', "Addon updated!");

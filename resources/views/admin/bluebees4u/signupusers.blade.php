@@ -86,9 +86,9 @@
                                     @endphp
                                 </td>
                                 <td class="text-center">
-                                    {{ $signupuser->payment_package }}
+                                    {{ $signupuser->payment_package_name }}
                                 </td>
-                                <td class="text-center">{{ $signupuser->signupuser_package }}</td>
+                                <td class="text-center">{{ $signupuser->signupuser_package_name }}</td>
                                 <td class="text-center">{{ $signupuser->product_category }}</td>
                             </tr>
                             @endforeach

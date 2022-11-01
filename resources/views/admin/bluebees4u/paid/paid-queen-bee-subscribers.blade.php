@@ -36,8 +36,8 @@
                             <tr>
                                 <td class="text-center">{{ $paidQueenBeeSubscriber->customer_id }}
                                 </td>
-                                <td class="text-center">{
-                                    { $paidQueenBeeSubscriber->first_name }} {{ $paidQueenBeeSubscriber->last_name }} <br>
+                                <td class="text-center">
+                                    {{ $paidQueenBeeSubscriber->first_name }} {{ $paidQueenBeeSubscriber->last_name }} <br>
                                     {{ $paidQueenBeeSubscriber->phone }} <br>
                                     {{ $paidQueenBeeSubscriber->email }}
                                 </td>

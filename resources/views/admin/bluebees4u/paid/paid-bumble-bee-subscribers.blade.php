@@ -34,8 +34,11 @@
                         <tbody>
                             @foreach ($paidBumbleBeeSubscribers as $paidBumbleBeeSubscriber)
                             <tr>
-                                <td class="text-center">{{ $paidBumbleBeeSubscriber->customer_id }}</td>
-                                <td class="text-center">{{ $paidBumbleBeeSubscriber->first_name }}
+                                <td class="text-center">
+                                    {{ $paidBumbleBeeSubscriber->customer_id }}
+                                </td>
+                                <td class="text-center">
+                                    {{ $paidBumbleBeeSubscriber->first_name }}
                                     {{ $paidBumbleBeeSubscriber->last_name }} <br>
                                     {{ $paidBumbleBeeSubscriber->phone }} <br>
                                     {{ $paidBumbleBeeSubscriber->email }}

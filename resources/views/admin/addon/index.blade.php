@@ -18,8 +18,8 @@
                     <table id="users_table" class="data-table table table-striped nowrap table-hover" cellspacing="0" width="100%">
                         <thead>
                             <tr>
-                                <th class="no-sort text-center">Addon Title</th>
-                                <th class="text-center">Addon Price</th>
+                                <th class="no-sort text-center">Addon</th>
+                                <th class="text-center">Price</th>
                                 <th class="text-center">Status</th>
                                 <th class="no-sort text-center">Action</th>
                             </tr>

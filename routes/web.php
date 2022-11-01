@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AddonController;
 use App\Http\Controllers\AjaxController;
 use App\Http\Controllers\ContactUsController;
 use App\Http\Controllers\DashboardController;
@@ -17,7 +18,6 @@ use App\Http\Controllers\SignUpController;
 use App\Http\Controllers\SiteSettingsController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\WebContentController;
-use App\Http\Controllers\AddonController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -88,6 +88,10 @@ Route::group([
         ->name('new_paid_subscribers.index');
     Route::get('current-paid-subscribers', [DashboardController::class, 'currentPaidSubscribers'])
         ->name('current_paid_subscribers.index');
+
+    Route::get('subscription-ended', [DashboardController::class, 'subscriptionEnded'])
+        ->name('subscription-ended.index');
+
     Route::get('paid-honey-bee-subscribers', [DashboardController::class, 'paidHoneyBeeSubscribers'])
         ->name('paid_honey_bee_subscribers.index');
     Route::get('paid-bumble-bee-subscribers', [DashboardController::class, 'paidBumbleBeeSubscribers'])
@@ -98,8 +102,17 @@ Route::group([
     //     ->name('expired_subscribers.index');
     Route::resource('package', PackageController::class)->except(['show']);
     Route::resource('promotion', PromotionController::class)->except(['show']);
+
+    Route::get('payments/{payment}/system-admin-edit', [PaymentController::class, 'systemAdminEdit'])->name('payments.system_admin_edit');
+    Route::post('payments/{payment}/system-admin-edit', [PaymentController::class, 'systemAdminEditUpdate'])->name('payments.system_admin_edit.update');
+
+    Route::post('payments/{payment}', [PaymentController::class, 'destroy'])
+        ->name('payments.system_admin_delete');
+
     Route::resource('payments', PaymentController::class)->except(['show']);
+
     Route::resource('addons', AddonController::class);
+
 });
 
 Auth::routes();

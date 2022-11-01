@@ -24,6 +24,8 @@ class AlterPaymentsTable extends Migration
             $table->string('status')->after('promotionCode');
             $table->string('package_price')->after('package');
             $table->string('addon_price')->after('package_price');
+            $table->integer('additional_amount')->nullable()->after('addon_price');
+            $table->string('additional_amount_note')->nullable()->after('additional_amount');
         });
     }
 

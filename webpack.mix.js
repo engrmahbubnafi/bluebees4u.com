@@ -36,4 +36,4 @@ mix.js('resources/assets/js/app.js', 'public/js')
     ], 'public/js/custom.js')
     .sourceMaps(true, 'source-map');
 
-mix.browserSync('http://bluebees4u.test');
+mix.browserSync('http://bluebees4u.localhost');

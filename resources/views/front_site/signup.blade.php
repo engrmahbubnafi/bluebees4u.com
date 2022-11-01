@@ -206,19 +206,19 @@
                         <div class="row">
                             <div class="col-sm-3 col-md-3 col-xl-3 text-center">
                                 <p class="addon-title">
-                                    <b>Addon Title</b>
+                                    <b>Add On</b>
                                 </p>
                             </div>
 
                             <div class="col-sm-3 col-md-3 col-xl-3 text-center">
                                 <p class="addon-price">
-                                    <b>Addon Price per Quantity</b>
+                                    <b>Price</b>
                                 </p>
                             </div>
 
                             <div class="col-sm-3 col-md-3 col-xl-3 text-center">
                                 <p class="addon-price">
-                                    <b>Addon Quantity</b>
+                                    <b>Quantity</b>
                                 </p>
                             </div>
 

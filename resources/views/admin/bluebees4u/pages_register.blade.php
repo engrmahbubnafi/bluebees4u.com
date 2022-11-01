@@ -7,6 +7,7 @@
         <div class="logo">
             <img alt="logo" src="images/logo-dark.png" />
         </div>
+        <div>Hello</div>
         <div class="box">
             <!--SIGN IN FORM-->
             <div class="panel mb-none">

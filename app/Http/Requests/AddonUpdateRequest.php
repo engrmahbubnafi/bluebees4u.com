@@ -26,6 +26,7 @@ class AddonUpdateRequest extends FormRequest
         return [
             "addon_title" => "required",
             "addon_price" => "required",
+            "status" => "nullable",
         ];
     }
 }

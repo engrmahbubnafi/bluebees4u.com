@@ -18,8 +18,9 @@ class SignUpUsers
     public function signupusers()
     {
     return Signupuser::leftJoin('subscribers', 'subscribers.signupuser_id', 'signupusers.id')
-        ->leftJoin('packages', 'packages.id', 'signupusers.signupuser_package')
+        ->leftJoin('packages as signupuser_package', 'signupuser_package.id', 'signupusers.signupuser_package')
         ->leftJoin('payments', 'payments.customer_id', 'signupusers.customer_id')
+        ->leftJoin('packages as payment_package', 'payment_package.id', 'payments.payment_package')
         ->select(
             'signupusers.customer_id',
             'signupusers.first_name',
@@ -30,7 +31,8 @@ class SignUpUsers
             'signupusers.created_at',
             'signupusers.signupuser_package',
             'signupusers.product_category',
-            'packages.package_name',
+            'payment_package.package_name as payment_package_name',
+            'signupuser_package.package_name as signupuser_package_name',
             'payments.payment_package'
         )
         ->groupBy('signupusers.customer_id')
