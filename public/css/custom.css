@@ -50,7 +50,7 @@
 .addon-price {
     padding-top: 25px;
 }
-  
+
 .input-group-field {
     padding: 8px 3px !important;
     text-align: center;
@@ -80,7 +80,7 @@
 }
 
 .addon-payable-amount {
-    text-align: right;    
+    text-align: right;
 }
 
 .addon-payable-amount p {
@@ -106,3 +106,12 @@
     width: 1920px;
     height: 500px;
 } */
+
+.require:after {
+    content: "*";
+    position: relative;
+    font-size: inherit;
+    color: #f1416c;
+    padding-left: 0.25rem;
+    font-weight: 700;
+}
